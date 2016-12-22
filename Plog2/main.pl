@@ -1,6 +1,7 @@
 :- include('generator.pl').
 :- include('aula.pl').
 
+
 choosePuzzleStyle(X):-write('1-Choose board'),nl,write('2-RandomBoard'),nl,prcss_ans(1,2,X).
 
 start:-choosePuzzleStyle(X),playThepuzzle(X).
